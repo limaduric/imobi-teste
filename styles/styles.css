@@ -18,6 +18,11 @@
     --texto: 'Roboto', sans-serif;
 }
 
+/* estilização geral */
+body {
+    background-color: #f8f8f8;
+}
+
 .titulos {
     font-family: var(--titulos);
     color: var(--cor-titulo);
@@ -187,7 +192,7 @@
     font-family: var(--texto);
     color: var(--cor-texto);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255, 255, 255, .8);
 }
 
 #formulario-principal form {
@@ -272,7 +277,7 @@
 }
 
 #galeria {
-   display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
@@ -416,7 +421,7 @@
 
 .text-background {
     color: var(--preto);
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255, 255, 255, .8);
 }
 
 #diferencial {
@@ -506,7 +511,8 @@
     width: 100%;
 }
 
-#formulario-de-contato form input, #formulario-de-contato form textarea{
+#formulario-de-contato form input,
+#formulario-de-contato form textarea {
     padding: 8px 5px;
     border-radius: 8px;
     letter-spacing: 1px;
@@ -588,7 +594,7 @@
 .footer-principal div:first-child {
     flex-basis: 35%;
     padding: 0 50px 0 0;
-  }
+}
 
 .footer-info {
     margin: 0 20px;
@@ -605,21 +611,22 @@
 }
 
 .footer-info p {
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
     font-size: 0.8em;
     line-height: 1.2em;
 }
 
 .footer-info ul a {
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.8em;
     line-height: 20px;
 }
 
-.footer-info ul a:hover, .footer-info a:hover {
-    color: rgba(255,255,255);
+.footer-info ul a:hover,
+.footer-info a:hover {
+    color: rgba(255, 255, 255);
     text-decoration: underline;
 }
 
@@ -671,7 +678,7 @@
     top: 100% !important;
     left: -27px !important;
     background-color: var(--azul);
-    border-top: 2px dotted rgba(255,255,255,.8);
+    border-top: 2px dotted rgba(255, 255, 255, .8);
 }
 
 .submenu li {
@@ -685,16 +692,15 @@ submenu li a {
     line-height: 30px !important;
 }
 
-.lista-de-links li:hover > .submenu {
+.lista-de-links li:hover>.submenu {
     display: flex !important;
 }
 
 .carousel {
     width: 100%;
-  }
-  
-  .carousel img {
+}
+
+.carousel img {
     width: 100%;
     height: auto;
-  }
-  
+}

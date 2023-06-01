@@ -1,0 +1,375 @@
+#banner {
+    height: 700px;
+    background-image: url("../img/pexels-andrea-piacquadio-920382.jpg");
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+#banner .conteudo {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    place-items: flex-start center;
+    place-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulo-banner {
+    margin: 0 20px;
+    color: var(--branco);
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1.7em;
+    max-width: 50%;
+    margin-bottom: 50px;
+}
+
+.title-background {
+    background-color: #151515;
+    opacity: 0.7;
+    padding: 5px;
+}
+
+#formulario-principal {
+    margin: 0 20px;
+    padding: 30px;
+    max-width: 30%;
+    background-color: var(--branco);
+    border-radius: 15px;
+    font-family: var(--texto);
+    color: var(--cor-texto);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, .8);
+}
+
+#formulario-principal form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-principal form h2 {
+    font-weight: bold;
+    color: var(--azul);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#formulario-principal form p {
+    font-style: italic;
+    color: #6b6b6d;
+    font-size: 0.8em;
+}
+
+#formulario-principal form label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--cor-titulo);
+    margin: 20px 0 5px;
+    color: var(--azul);
+}
+
+#formulario-principal form select {
+    display: inline-block;
+    padding: 8px 5px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #f8f3f3;
+    border: 1px solid var(--azul);
+    color: var(--azul)
+}
+
+#formulario-principal form input {
+    padding: 8px 5px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    background-color: #f8f3f3;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+}
+
+#formulario-principal form input:focus,
+#formulario-principal form select:focus {
+    box-shadow: 0 0 3px 1px var(--azul) inset;
+    outline: 0;
+}
+
+#formulario-principal form button {
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: var(--azul);
+    color: var(--branco);
+    border: 1px solid var(--azul);
+}
+
+#formulario-principal form button:hover,
+#formulario-principal form button:active {
+    background-color: var(--preto);
+    border: 1px solid var(--preto);
+}
+
+#imoveis-em-destaque .conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#titulo-destaques {
+    color: var(--branco);
+    text-align: center;
+    margin: 50px 20px 50px 20px;
+    font-size: 2.5em;
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+}
+
+.cartao-propriedade {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 330px;
+    margin: 0 10px 50px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    box-shadow:
+        0px 0px 3.6px rgba(0, 0, 0, 0.021),
+        0px 0px 10px rgba(0, 0, 0, 0.03),
+        0px 0px 24.1px rgba(0, 0, 0, 0.039),
+        0px 0px 80px rgba(0, 0, 0, 0.06);
+    transition: 0.25s;
+}
+
+.cartao-propriedade:hover {
+    box-shadow:
+        2.1px 2.1px 3.6px rgba(0, 0, 0, 0.028),
+        5.8px 5.8px 10px rgba(0, 0, 0, 0.04),
+        13.9px 13.9px 24.1px rgba(0, 0, 0, 0.052),
+        46px 46px 80px rgba(0, 0, 0, 0.08);
+    transition: 0.25s;
+}
+
+.cartao-propriedade img {
+    border-radius: 10px 10px 0 0;
+}
+
+.cartao-info-principal {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cartao-info-principal p {
+    margin: 10px 0;
+}
+
+.prop-tipo {
+    font-size: 0.8em;
+}
+
+.blue {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+.prop-endereço {
+    font-size: 0.8em;
+}
+
+.prop-descrição {
+    font-size: 0.9em;
+}
+
+.cartao-info-secundaria {
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.info-secundaria {
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+}
+
+.info-secundaria i {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.info-secundaria p {
+    font-size: 0.8em;
+}
+
+.carrousel img {
+    width: 100%;
+}
+
+#anuncie-imovel {
+    background-image: url(../img/pexels-fauxels-3184292.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    height: 400px;
+    margin: 0 20px;
+    box-shadow: 0px 0px 3.6px rgba(0, 0, 0, 0.021), 0px 0px 10px rgba(0, 0, 0, 0.03), 0px 0px 24.1px rgba(0, 0, 0, 0.039), 0px 0px 80px rgba(0, 0, 0, 0.06);
+}
+
+#anuncie-imovel div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#anuncie-imovel div h2 {
+    font-size: 2.4em;
+    color: var(--branco);
+    margin-top: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#anuncie-imovel div p {
+    font-family: var(--texto);
+    font-size: 1.2em;
+}
+
+#diferencial {
+    margin: 50px 20px 0 20px;
+}
+
+#container-title h2 {
+    font-size: 2.5em;
+    color: var(--cor-titulo);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#diferencial-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.diferencial-card {
+    max-width: 250px;
+    min-height: 300px;
+    color: var(--branco);
+    background-color: var(--azul);
+    margin: 0 20px 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 3.6px rgba(0, 0, 0, 0.021), 0px 0px 10px rgba(0, 0, 0, 0.03), 0px 0px 24.1px rgba(0, 0, 0, 0.039), 0px 0px 80px rgba(0, 0, 0, 0.06);
+}
+
+.diferencial-card div i {
+    font-size: 4em;
+}
+
+.diferencial-card h3 {
+    font-family: var(--titulos);
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.diferencial-card p {
+    font-family: var(--texto);
+    text-align: center;
+}
+
+#contatos {
+    display: flex;
+    margin: 50px 20px 0 20px;
+    height: 350px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.background-gray {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#formulario-de-contato {
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#informacoes-de-contato {
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    height: 100%;
+    justify-content: center;
+}
+
+#formulario-de-contato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#formulario-de-contato form input,
+#formulario-de-contato form textarea {
+    padding: 8px 5px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    background-color: #f8f3f3;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    margin: 5px 0;
+}
+
+#formulario-de-contato form textarea {
+    height: 100px;
+}
+
+#formulario-de-contato form input:focus,
+#formulario-de-contato form textarea:focus {
+    box-shadow: 0 0 3px 1px var(--azul) inset;
+    outline: 0;
+}
+
+#formulario-de-contato form button {
+    width: 180px;
+    margin-top: 5px;
+    margin-left: auto;
+}
+
+#title-contato {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#informacoes-de-contato p {
+    line-height: 1.2em;
+}
+
+#lista-social-media {
+    margin-top: 10px;
+    font-size: 2.3em;
+    letter-spacing: 7px;
+}
