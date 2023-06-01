@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- configs -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- visualização -->
+    <title>Imobiliária Padrão</title>
+
+    <!-- importações -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/main-style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/60a8b8585c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.min.js"></script>
+
+</head>
+
+<body>
+    <!-- cabeçalhos -->
+    <header id="cabeçalho">
+        <div class="conteudo">
+            <div id="cabeçalho-principal">
+                <div id="logo-container">
+                    <a href="index.html">
+                        <img src="img/—Pngtree—real estate logo background material_3624699.png" width="100%"
+                            alt="Logo da Imobiliária">
+                    </a>
+                </div>
+                <div id="telefone-container" class="info-container">
+                    <div class="icon-container">
+                        <img src="img/phone-call.png" alt="Ícone de Telefone">
+                        <!-- <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Creaticca Creative Agency - Flaticon</a> -->
+                    </div>
+                    <div id="telefone-links" class="links">
+                        <a href="#" class="link">
+                            <p>(11) 912345-1234</p>
+                        </a>
+                        <a href="#" class="link">
+                            <p>(11) 965654-8791</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="endereço-container" class="info-container">
+                    <div class="icon-container">
+                        <img src="img/location.png" alt="Ícone de Endereço">
+                        <!-- <a href="https://www.flaticon.com/free-icons/location" title="location icons">Location icons created by Uniconlabs - Flaticon</a> -->
+                    </div>
+                    <div id="endereço-link">
+                        <a href="#" class="links link">
+                            <p>Avenida tantas e tantas, 777</p>
+                            <p>Jardim Lalaland, Suzano, SP</p>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" id="botao-header" class="botao">
+                    Anuncie seu Imóvel
+                </a>
+            </div>
+        </div>
+        <div id="container-secundario">
+            <div id="cabeçalho-secundario" class="conteudo">
+                <ul class="lista-de-links">
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li>
+                        <a href="#" class="link">Comprar <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Casa</a></li>
+                            <li><a href="#">Apartamento</a></li>
+                            <li><a href="#">Terreno</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Alugar <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Casa</a></li>
+                            <li><a href="#">Apartamento</a></li>
+                            <li><a href="#">Sala Comercial</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#sobre-nos" class="link">Sobre nós</a></li>
+                    <li><a href="#contatos" class="link">Fale conosco</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <div id="banner">
+        <div class="conteudo">
+            <h1 id="titulo-banner" class="titulos"><span class="title-background">Encontre o imóvel dos seus sonhos hoje
+                    mesmo!</span></h1>
+            <div id="formulario-principal">
+                <form>
+                    <h2>O que você procura?</h2>
+
+                    <p>Para realizar a busca, preencha os campos abaixo de acordo com suas preferências e clique em
+                        "Buscar Imóveis".</p>
+
+                    <label for="finalidade">Finalidade</label>
+                    <select id="finalidade" name="finalidade">
+                        <option value="comprar">Comprar</option>
+                        <option value="alugar">Alugar</option>
+                    </select>
+
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo" name="tipo">
+                        <option value="todos">Todos</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="casa">Casa</option>
+                        <option value="loja">Loja</option>
+                        <option value="ponto-comercial">Ponto Comercial</option>
+                    </select>
+
+                    <label for="valor-minimo">Valor Mínimo</label>
+                    <input type="number" id="valor-minimo" name="valor-minimo">
+
+                    <label for="valor-maximo">Valor Máximo</label>
+                    <input type="number" id="valor-maximo" name="valor-maximo">
+
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" name="codigo">
+
+                    <button type="submit" class="botao">Buscar Imóveis</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- imóveis em destaque -->
+
+    <div id="imoveis-em-destaque">
+        <div class="conteudo">
+            <h2 id="titulo-destaques" class="titulos"><span class="title-background">Imóveis em Destaque</span></span>
+            </h2>
+            <div id="galeria">
+                <div class="cartao-propriedade texto">
+                    <div class="carousel">
+                        <div><img src="img/apartamento-decorado-00.webp"></div>
+                        <div><img src="img/pexels-andrea-piacquadio-920382.jpg"></div>
+                        <div><img src="img/pexels-mikhail-nilov-7736029.jpg"></div>
+                    </div>
+                    <div class="cartao-info-principal">
+                        <p class="prop-tipo">Apartamento</p>
+                        <p class="prop-preço blue">R$ 500.000</p>
+                        <p class="prop-endereço">Rua Tanananam lalalal, 14<br>Jardim Secreto Suzano, SP</p>
+                        <p class="prop-descrição">Uma linda e linda casa pasasd aspoojasa as aopjasjoasd Aoasjosjd
+                            ASoaskd...</p>
+                    </div>
+                    <div class="cartao-info-secundaria">
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-ruler-horizontal blue"></i>
+                            <p class="valor">100m2&#x00B2;</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-bed blue"></i>
+                            <p class="valor">02</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-shower blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-car blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao-propriedade texto">
+                    <div class="carrousel">
+                        <img src="img/apartamento-decorado-00.webp">
+                    </div>
+                    <div class="cartao-info-principal">
+                        <p class="prop-tipo">Apartamento</p>
+                        <p class="prop-preço blue">R$ 500.000</p>
+                        <p class="prop-endereço">Rua Tanananam lalalal, 14<br>Jardim Secreto Suzano, SP</p>
+                        <p class="prop-descrição">Uma linda e linda casa pasasd aspoojasa as aopjasjoasd Aoasjosjd
+                            ASoaskd...</p>
+                    </div>
+                    <div class="cartao-info-secundaria">
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-ruler-horizontal blue"></i>
+                            <p class="valor">100m2&#x00B2;</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-bed blue"></i>
+                            <p class="valor">02</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-shower blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-car blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao-propriedade texto">
+                    <div class="carrousel">
+                        <img src="img/apartamento-decorado-00.webp">
+                    </div>
+                    <div class="cartao-info-principal">
+                        <p class="prop-tipo">Apartamento</p>
+                        <p class="prop-preço blue">R$ 500.000</p>
+                        <p class="prop-endereço">Rua Tanananam lalalal, 14<br>Jardim Secreto Suzano, SP</p>
+                        <p class="prop-descrição">Uma linda e linda casa pasasd aspoojasa as aopjasjoasd Aoasjosjd
+                            ASoaskd...</p>
+                    </div>
+                    <div class="cartao-info-secundaria">
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-ruler-horizontal blue"></i>
+                            <p class="valor">100m2&#x00B2;</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-bed blue"></i>
+                            <p class="valor">02</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-shower blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-car blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao-propriedade texto">
+                    <div class="carrousel">
+                        <img src="img/apartamento-decorado-00.webp">
+                    </div>
+                    <div class="cartao-info-principal">
+                        <p class="prop-tipo">Apartamento</p>
+                        <p class="prop-preço blue">R$ 500.000</p>
+                        <p class="prop-endereço">Rua Tanananam lalalal, 14<br>Jardim Secreto Suzano, SP</p>
+                        <p class="prop-descrição">Uma linda e linda casa pasasd aspoojasa as aopjasjoasd Aoasjosjd
+                            ASoaskd...</p>
+                    </div>
+                    <div class="cartao-info-secundaria">
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-ruler-horizontal blue"></i>
+                            <p class="valor">100m2&#x00B2;</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-bed blue"></i>
+                            <p class="valor">02</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-shower blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-car blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao-propriedade texto">
+                    <div class="carrousel">
+                        <img src="img/apartamento-decorado-00.webp">
+                    </div>
+                    <div class="cartao-info-principal">
+                        <p class="prop-tipo">Apartamento</p>
+                        <p class="prop-preço blue">R$ 500.000</p>
+                        <p class="prop-endereço">Rua Tanananam lalalal, 14<br>Jardim Secreto Suzano, SP</p>
+                        <p class="prop-descrição">Uma linda e linda casa pasasd aspoojasa as aopjasjoasd Aoasjosjd
+                            ASoaskd...</p>
+                    </div>
+                    <div class="cartao-info-secundaria">
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-ruler-horizontal blue"></i>
+                            <p class="valor">100m2&#x00B2;</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-bed blue"></i>
+                            <p class="valor">02</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-shower blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-car blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao-propriedade texto">
+                    <div class="carrousel">
+                        <img src="img/apartamento-decorado-00.webp">
+                    </div>
+                    <div class="cartao-info-principal">
+                        <p class="prop-tipo">Apartamento</p>
+                        <p class="prop-preço blue">R$ 500.000</p>
+                        <p class="prop-endereço">Rua Tanananam lalalal, 14<br>Jardim Secreto Suzano, SP</p>
+                        <p class="prop-descrição">Uma linda e linda casa pasasd aspoojasa as aopjasjoasd Aoasjosjd
+                            ASoaskd...</p>
+                    </div>
+                    <div class="cartao-info-secundaria">
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-ruler-horizontal blue"></i>
+                            <p class="valor">100m2&#x00B2;</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-bed blue"></i>
+                            <p class="valor">02</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-shower blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                        <div class="info-secundaria">
+                            <i class="fa-solid fa-car blue"></i>
+                            <p class="valor">01</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="botao botao-novo">Veja mais imóveis</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Anuncie seu imóvel -->
+    <div class="conteudo">
+        <div id="anuncie-imovel">
+            <div>
+                <!-- Foto de fauxels: https://www.pexels.com/pt-br/foto/as-pessoas-discutem-sobre-graficos-e-taxas-3184292/ -->
+                <h2 class="titulos"><span class="title-background">Anuncie seu imóvel com a gente</span></h2>
+                <p><span class="text-background">Conectamos o seu imóvel a clientes realmente interessados em alugar e
+                        comprar.</span></p>
+                <div>
+                    <a class="botao botao-branco">Quero Anunciar!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- diferencial -->
+    <div class="conteudo">
+        <div id="diferencial">
+            <div id="container-title">
+                <h2 class="titulos">Nossos Diferenciais</h2>
+            </div>
+            <div id="diferencial-gallery">
+                <div class="diferencial-card">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3>Equipe especializada</h3>
+                    <p>Nossa equipe altamente capacitada está pronta para oferecer um atendimento personalizado e
+                        ajudá-lo a encontrar o imóvel dos seus sonhos.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <h3>Ampla seleção de imóveis</h3>
+                    <p>Oferecemos uma ampla seleção de imóveis, incluindo apartamentos, casas, lojas e pontos
+                        comerciais, para atender às diversas necessidades dos nossos clientes.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h3>Processo simplificado</h3>
+                    <p>Tornamos o processo de compra ou aluguel de imóveis simples e sem complicações, oferecendo
+                        suporte desde a busca até a conclusão do negócio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- formulario de contato-->
+    <div class="conteudo background-gray">
+        <div id="contatos">
+            <div id="formulario-de-contato">
+                <form>
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Mensagem"></textarea>
+                    <button type="submit" class="botao botao-novo">Enviar</button>
+                </form>
+            </div>
+            <div id="informacoes-de-contato">
+                <h2 class="titulos" id="title-contato">Contate-Nos</h2>
+                <p class="texto">Nosso endereço de correspondência é:</p>
+                <p class="texto"><a href="#" class="link">Avenida lalala, 165<br>Jardim Monte Cristo, Suzano SP</a></p>
+                <br>
+                <p class="texto">Telefone: <br><a href="#" class="link">+55 11 912345-7891</a></p><br>
+
+                <div id="lista-social-media">
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-principal">
+            <div class="conteudo">
+                <div class="footer-info flex-1" id="sobre-nos">
+                    <h3 class="titulos">Sobre nós</h3>
+                    <p class="texto">"Fundada há mais de uma década, nossa agência imobiliária nasceu do sonho de criar
+                        um espaço onde
+                        pessoas pudessem encontrar o lar ideal. Desde então, temos ajudado inúmeras famílias a encontrar
+                        o imóvel dos seus sonhos. Nossa história é marcada pela paixão em oferecer um serviço
+                        personalizado, valorizando a confiança e o relacionamento com nossos clientes. Acreditamos que
+                        cada casa tem uma história para contar e buscamos conectar as pessoas com os lugares que irão
+                        tornar essas histórias ainda mais especiais. Com uma equipe altamente capacitada e um profundo
+                        conhecimento do mercado, estamos sempre em busca das melhores oportunidades e soluções para
+                        atender às necessidades únicas de cada cliente. Somos movidos pela satisfação e felicidade de
+                        ver nossos clientes realizarem seus sonhos. Nossa missão é superar expectativas, proporcionando
+                        uma experiência única e memorável em cada transação imobiliária. Junte-se a nós e deixe-nos
+                        fazer parte da sua jornada em busca do lar perfeito."</p>
+                </div>
+                <div class="footer-info flex-1">
+                    <a href="#" class="link">
+                        <h3 class="titulos">Comprar</h3>
+                    </a>
+                    <ul class="texto">
+                        <a href="#" class="link">Comprar casa</a><br>
+                        <a href="#" class="link">Comprar apartamento</a><br>
+                        <a href="#" class="link">Comprar terreno</a><br>
+                        <a href="#" class="link">Comprar estabelecimento comercial</a><br>
+                    </ul>
+                </div>
+                <div class="footer-info flex-1">
+                    <a href="#" class="link">
+                        <h3 class="titulos">Alugar</h3>
+                    </a>
+                    <ul class="texto">
+                        <a href="#" class="link">ALugar casa</a><br>
+                        <a href="#" class="link">ALugar apartamento</a><br>
+                        <a href="#" class="link">ALugar terreno</a><br>
+                        <a href="#" class="link">ALugar estabelecimento comercial</a><br>
+                    </ul>
+                </div>
+                <div class="footer-info flex-1">
+                    <h3 class="titulos">Outros Links</h3>
+                    <ul class="texto">
+                        <a href="#" class="link">Sobre Nós</a><br>
+                        <a href="#" class="link">Fale Conosco</a><br>
+                        <a href="#" class="link">Anuncie seu Imóvel</a><br>
+                        <a href="#" class="link">Busca de Imóveis</a><br>
+                        <a href="#" class="link">Política de Privacidade</a><br>
+                        <a href="#" class="link">Termos de Uso</a><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-secundario">
+            <div class="conteudo">
+                <div id="footer-logo">
+                    <img src="img/—Pngtree—real estate logo background material_3624699.png" width="127px">
+                </div>
+                <p>Feito com ❤️ por <a href="https://instagram.com/limaduric_">Richard Lima</a></p>
+                <div id="lista-social-media-ft">
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- botão whatsapp -->
+    <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5511999999999">
+        <div class="rwb-tooltip">Fale conosco!</div>
+        <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+    </a>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                dots: true
+            });
+        });
+    </script>
+</body>
+
+</html>
